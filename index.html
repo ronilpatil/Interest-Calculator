@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Calculator</title>
+    <link rel="stylesheet" type="text/css" href="look.css">
+    <script src="calculator.js"></script>
+</head>
+<body>
+    <h1>Interest Calculator</h1>
+    
+        <div id="Input">    
+        <form>
+        <p>
+        <label for="Principal">Principal</label>
+        <input id="Principal" type="text">
+        </p>
+        <p><label for="Rate">Rate of Interest</label>
+        <input id="Rate" type="text">
+        </p>
+        <p>
+        <label for="Time">Time Period</label>
+        <input id="Time" type="text">
+        </p>
+        <p><label>Simple Interest</label>
+        <input type="radio">
+        </p>
+        <p>
+        <label>Compound Interest</label>
+        <input type="radio"> 
+        </p>
+        </form>
+        <center><button type="submit" onclick="calculate()">Submit</button></center>
+        <div style="padding:1em;"id="Result"></div>
+        </div>
+</body>
+</html>
