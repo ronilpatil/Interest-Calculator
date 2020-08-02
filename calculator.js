@@ -11,7 +11,7 @@ function calculate(){
                 return
             }
             if(checked=="Simple"){
-            a=p+(p*r*t)/100
+            a=p+((p*r*t)/100)
             }
             else if(checked=="Compound"){
             a=p*Math.pow(1+(r/100),t)
