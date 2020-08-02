@@ -4,7 +4,8 @@ function calculate(){
     const r=document.getElementById("Rate").value;
     const t=document.getElementById("Time").value;
     const checked=document.querySelector('input[name="choice"]:checked').value
-    var a=null
+    var a=0.00
+    var interest=0.00
     const result=document.getElementById("Result")
     if(p==""||r==""||t==""){
         result.innerHTML="Complete all the fields!"
@@ -16,8 +17,8 @@ function calculate(){
     else if(checked=="Compound"){
     a=p*Math.pow(1+(r/100),t)
     }
-   
-    result.innerHTML="Total Amount: "+a.toFixed(2)
+    interest=a-p
+    result.innerHTML=`Interest: ${interest.toFixed(2)}<br>Total Amount: ${a.toFixed(2)}`
     return
 
     }
