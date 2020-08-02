@@ -15,24 +15,29 @@
         <p>
         <label for="Principal">Principal</label>
         <input id="Principal" type="text">
+        <p id="sep"></p>
         </p>
         <p><label for="Rate">Rate of Interest</label>
-        <input id="Rate" type="text">
+        <input id="Rate" type="number" step="0.5" >
         </p>
+        <p id="sep"></p>
         <p>
         <label for="Time">Time Period</label>
-        <input id="Time" type="text">
+        <input id="Time" type="number" min="1">
         </p>
+        <p id="sep"></p>
         <p><label>Simple Interest</label>
-        <input type="radio">
+        <input type="radio" value="Simple" name="choice" checked>
         </p>
         <p>
         <label>Compound Interest</label>
-        <input type="radio"> 
+        <input type="radio" value="Compound" name="choice"> 
         </p>
         </form>
+        <p id="sep"></p>
         <center><button type="submit" onclick="calculate()">Submit</button></center>
-        <div style="padding:1em;"id="Result"></div>
+        <div  id="Result"></div>
         </div>
+        
 </body>
 </html>
